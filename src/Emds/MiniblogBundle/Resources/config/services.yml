@@ -1,0 +1,7 @@
+parameters:
+#    emds_miniblog.example.class: Emds\MiniblogBundle\Example
+
+services:
+#    emds_miniblog.example:
+#        class: %emds_miniblog.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

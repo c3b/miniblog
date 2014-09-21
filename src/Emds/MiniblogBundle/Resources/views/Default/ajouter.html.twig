@@ -1,0 +1,10 @@
+{# afficher.html.twig : ajout de messages#}
+
+{% extends "EmdsMiniblogBundle::layout.html.twig" %}
+
+{% block title %}{{parent()}} - Ajout d'un messages {% endblock %}
+{% block miniblog_body %}
+    <h2>Ajout d'un message</h2>
+    {% include "EmdsMiniblogBundle:Default:form.html.twig" %}
+    
+{% endblock %}

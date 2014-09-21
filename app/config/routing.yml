@@ -1,0 +1,4 @@
+emds_miniblog:
+    resource: "@EmdsMiniblogBundle/Resources/config/routing.yml"
+    prefix:   /
+

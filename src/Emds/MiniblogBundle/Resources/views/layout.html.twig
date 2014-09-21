@@ -1,0 +1,11 @@
+{# layout.html.twig : structure du bundle #}
+
+{% extends "::base.html.twig" %}
+
+{% block title %}{{ parent() }} - Mini Blog {% endblock %}
+
+{% block body %}
+    <h1>Mini Blog</h1>
+    {% block miniblog_body %}
+    {% endblock %}
+{% endblock %}

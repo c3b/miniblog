@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Emds{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('css/monsite.css') }}"
+             type ="text/css" />
+        
+        
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        
+        <div id="principal">
+            <div id="bandeau"></div>
+            <div id ="corps">
+                <div id ="presentation">
+                    <h1>Mon site</h1>
+                    <h2>Mon blog</h2>
+                    <a href="{{ path('EmdsMiniblogBundle_homepage')}}">
+                     Liste des messages
+                    </a><br/>
+                    <a href="{{ path('EmdsMiniblogBundle_ajouter')}}">
+                     Ajouter un message
+                    </a><br/>
+                </div>
+                <div id ="miniblog">
+                    {% block body %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </body>
+    
+              
+        
+    
+</html>
